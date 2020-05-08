@@ -1,0 +1,39 @@
+ PK: primary key (column is part of a pk)  主键
+
+ NN: not null (column is nullable)  是否为空
+
+-UQ: unique (column is part of a unique key)  外键
+
+ AI: auto increment (the column is auto incremented when rows are inserted)  自动增加
+
+  BIN: binary (if dt is a blob or similar, this indicates that is binary data, rather than text)   二进制
+
+ UN: unsigned (for integer types, see docs: “10.2. Numeric Types”)
+
+- ZF: zero fill (rather a display related flag, see docs: “10.2. Numeric Types”)
+
+
+https://www.cnblogs.com/yangmingxianshen/p/7999428.html
+MySQL查看和修改字符集的方法
+
+https://blog.csdn.net/justry_deng/article/details/81458470 
+https://www.cnblogs.com/sweet521/p/6203360.html创建索引
+
+https://www.cnblogs.com/xinruyi/p/11343165.html
+MYSQL中唯一约束和唯一索引的区别
+
+https://blog.csdn.net/qq_43563538/article/details/90369553
+约束解释
+https://blog.csdn.net/u012045045/article/details/97101163
+查看表结构的几种方式
+
+
+
+三、什么是索引？
+      MySQL官方对索引的定义为：索引(Index)是帮助MySQL高效获取数据的数据结构。
+我们可以简单理解为：快速查找排好序的一种数据结构。
+Mysql索引主要有两种结构：B+Tree索引和Hash索引。
+我们平常所说的索引，如果没有特别指明，一般都是指B树结构组织的索引(B+Tree索引)。
+索引如图所示：https://www.cnblogs.com/qixidi/p/10260180.html
+
+https://www.cnblogs.com/softidea/p/6135097.html增加和删除字段

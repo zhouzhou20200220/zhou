@@ -1,0 +1,48 @@
+https://blog.csdn.net/u010454030/article/details/80543302 
+java 的嵌套类
+
+https://www.cnblogs.com/minixiong/p/11229690.html
+使用while(true)的作用：
+run方法中的代码就是线程要运行的代码，运行完毕以后，就不会再次运行，其方法本身并不是无限循环的。
+而while(true)是为了让run方法中的代码不断重复的运行，也就是让线程不停的运行，便于查看效果。如果去掉，run运行结束，线程也就结束了。
+当然，while(true)并不是run()方法必须的，如果线程的run()部分只需要执行一次，则不需要嵌套while(true)循环。
+while(true)是一个无穷循环语句  我们必须在他的循环语句内部加入一个判断  当他达到了什么要求就会跳出
+复制代码
+int i =1
+while(true)
+{
+if(i>10)break;
+i++;
+}
+//这样最后弹出的就是11；
+
+
+https://blog.csdn.net/Fly_as_tadpole/article/details/84203209
+什么是Scanner？next()和hasNext() ? nextLine()和hasNextLine()?
+https://www.cnblogs.com/ly20171219/p/8085146.html
+this 用法
+
+
+
+https://www.runoob.com/java/java-loop.html知识点
+
+https://how2j.cn/?p=80907
+https://www.educoder.net/paths/54做题
+
+
+
+java实现Comparable接口和Comparator接口，并重写compareTo方法和compare方法
+https://www.cnblogs.com/111testing/p/9158140.html
+
+
+
+https://zhidao.baidu.com/question/382425294.html
+重载和重写的区别
+
+
+http://blog.sina.com.cn/s/blog_bb19b2170102xp9p.html
+Java中全局变量，局部变量，成员变量，类（静态）变量，实例变量分别都是什么，有什么区别和联系？
+https://blog.csdn.net/weixin_37012881/article/details/82699089
+
+https://zhidao.baidu.com/question/1836033064667842140.html
+全局变量 局部变量

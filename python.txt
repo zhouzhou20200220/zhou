@@ -1,0 +1,69 @@
+https://blog.csdn.net/weixin_42711549/article/details/82147012 
+变量名的规则
+
+https://jingyan.baidu.com/album/fec7a1e5431c675090b4e7b1.html?picindex=1
+python保留字
+
+https://blog.csdn.net/loading0210/article/details/80945366
+赋值规则
+
+https://wenku.baidu.com/view/ab3424b2657d27284b73f242336c1eb91b373308.html
+turtle 库
+time 库
+
+https://www.php.cn/python-tutorials-422953.html
+比较浮点数 不能用==比较是否相等 因为计算机二进制转换有误差
+
+
+
+
+当转换为Boolean时，以下值被认为是FALSE：
+
+布尔值FALSE自身
+整型值 0
+浮点型值 0.0
+空字符串 ''
+字符串 "0"
+不包括任何元素的数组 array｛｝
+不包括任何成员变量的对象（仅PHP4.0适用）
+特殊类型NULL（包括尚未设定的变量）
+从没有任何标记（tags）的XML文档生成的SimpleXML对象
+
+
+Note：所有其他值都被认为是TRUE（包括任何资源）
+  -1和其它非零值（不论正负）一样，被认为是TRUE
+
+python random库中 uniform unint等等（a，，b）包括a和b
+
+
+
+
+
+
+
+
+
+https://blog.csdn.net/Zivid_Liu/article/details/103867091
+
+
+
+
+
+https://www.cnblogs.com/lovejh/p/9201219.html
+python format使用方法
+
+
+
+https://www.cnblogs.com/Lengjie/p/9459215.html
+创建空列表： list = []
+
+创建空元组：tuple = ()
+
+创建单个元素的元组：tuple_single = ('1',)
+
+创建空字典： dict = {}
+
+创建空集合：set = set()
+
+
+

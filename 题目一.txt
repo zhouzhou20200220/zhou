@@ -1,0 +1,106 @@
+package org.etc.kis.vo;
+import java.util.ArrayList;
+import java.util.List;
+public class Student {
+ private String name;
+ private String gendar;
+ private List<Caurse> cs = new ArrayList<Caurse>();
+  
+ public Student() {
+  super();
+ }
+ public Student(String name, String gendar) {
+  super();
+  this.name = name;
+  this.gendar = gendar;
+ }
+ @Override
+ public String toString() {
+  /**
+   * 姓名：信息 性别：女
+   * 课程 性质 出勤 作业 实验 期末 总分
+   * ========================================
+   * Java 考查课 90.0 85.0 75.0 80.0 82.0
+   * SQL 考试课 80.0 90.0 82.0 75.0 77.7
+   * J2EE 考查课 78.0 70.0 65.0 70.0 71.1
+   */
+  StringBuffer sb = new StringBuffer();
+  sb.append("姓名："+name+"\t性别："+gendar+"\n");
+  sb.append("课程\t性质\t出勤\t作业\t实验\t期末\t总分\n");
+  sb.append("====================================================\n");
+  for(Caurse c : cs){
+   sb.append(c.type+"\t"+ (c.isKsk ? "考试课" : "考查课")+"\t"+c.cq+"\t"+c.zy+"\t"+c.sy+"\t"+c.qm+"\t"+c.setGrade()+"\n");
+  }
+  return  sb.toString();
+ }
+ class Caurse{
+  String type;
+  boolean isKsk;
+  double grade;
+  double cq;
+  double zy;
+  double sy;
+  double qm;
+   
+  public Caurse(String type, boolean isKsk, double cq,
+    double zy, double sy, double qm) {
+   super();
+   this.type = type;
+   this.isKsk = isKsk;
+   this.cq = cq;
+   this.zy = zy;
+   this.sy = sy;
+   this.qm = qm;
+  }
+  public double setGrade(){
+   if(isKsk){
+//    出勤*10%+作业*10%+实验*10%+期末*70%
+    grade = cq*0.1+zy*0.1+sy*0.1+qm*0.7; 
+   }else{
+//    出勤*20%+作业*10%+实验*10%+期末*60%
+    grade = cq*0.2+zy*0.1+sy*0.1+qm*0.6; 
+   }
+   return grade;
+  }
+ }
+  
+ public static void main(String[] args) {
+  Student s1 = new Student("李红","女");
+  Student s2 = new Student("王晓明","男");
+//  String type, boolean isKsk, double cq,double zy, double sy, double qm
+//  出勤*10%+作业*10%+实验*10%+期末*70%
+  Caurse c01 = s1.new Caurse("Java", false, 90, 85, 75, 80);
+  Caurse c02 = s1.new Caurse("SQL", true, 80, 90, 82, 75);
+  Caurse c03 = s1.new Caurse("J2EE", false, 78, 70, 65, 70);
+  Caurse c11 = s2.new Caurse("Java", false, 86, 67, 71, 70);
+  Caurse c12 = s2.new Caurse("SQL", true, 77, 70, 85, 66);
+  Caurse c13 = s2.new Caurse("J2EE", false, 88, 74, 68, 80);
+  s1.getCs().add(c01);
+  s1.getCs().add(c02);
+  s1.getCs().add(c03);
+  s2.getCs().add(c11);
+  s2.getCs().add(c12);
+  s2.getCs().add(c13);
+  System.out.println(s1);
+  System.out.println(s2);
+   
+ }
+ public String getName() {
+  return name;
+ }
+ public void setName(String name) {
+  this.name = name;
+ }
+ public String getGendar() {
+  return gendar;
+ }
+ public void setGendar(String gendar) {
+  this.gendar = gendar;
+ }
+ public List<Caurse> getCs() {
+  return cs;
+ }
+ public void setCs(List<Caurse> cs) {
+  this.cs = cs;
+ }
+}
